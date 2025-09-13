@@ -7,9 +7,10 @@ import com.teched.app.model.Mapping;
 import com.teched.app.service.MappingService;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/mapping")
+@CrossOrigin(origins = "*") // Adjust CORS origins as appropriate
 public class MappingController {
     @Autowired
     private MappingService mappingService;

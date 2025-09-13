@@ -30,10 +30,11 @@ import com.teched.app.service.StudentDetailsService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000")
 @Tag(name = "Student API", description = "Operations related to students")
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "*") // Adjust CORS origins as appropriate
 public class StudentDetailsController {
 
     private static final Logger logger = LoggerFactory.getLogger(StudentDetailsController.class);

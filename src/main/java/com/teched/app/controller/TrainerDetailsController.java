@@ -7,9 +7,11 @@ import com.teched.app.model.TrainerDetails;
 import com.teched.app.service.TrainerDetailsService;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/trainer")
+@CrossOrigin(origins = "*") // Adjust CORS origins as appropriate
+
 public class TrainerDetailsController {
     @Autowired
     private TrainerDetailsService trainerService;

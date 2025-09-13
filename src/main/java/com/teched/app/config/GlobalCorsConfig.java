@@ -12,7 +12,7 @@ public class GlobalCorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         // Enable CORS for your API endpoints
         registry.addMapping("/api/**")
-                .allowedOrigins("http://localhost:3000", "http://localhost:62439") // frontend origins
+                .allowedOrigins("http://localhost:3000", "http://localhost:62439","http://localhost:52915/") // frontend origins
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
     }

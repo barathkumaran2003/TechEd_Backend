@@ -11,7 +11,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/trainer")
 @CrossOrigin(origins = "*") // Adjust CORS origins as appropriate
-
 public class TrainerDetailsController {
     @Autowired
     private TrainerDetailsService trainerService;

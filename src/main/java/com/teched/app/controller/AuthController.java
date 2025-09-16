@@ -2,6 +2,9 @@ package com.teched.app.controller;
 
 import com.teched.app.model.User;
 import com.teched.app.service.UserService;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,6 +21,13 @@ public class AuthController {
     public User register(@RequestBody User user) {
         return userService.registerUser(user);
     }
+    
+    @GetMapping
+    public List<User> user()
+    {
+    	return userService.getAllUser();
+    }
+    
 
     // Login endpoint
     @PostMapping("/login")
